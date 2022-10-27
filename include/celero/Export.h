@@ -19,22 +19,22 @@
 /// limitations under the License.
 ///
 
-#ifdef CELERO_STATIC
+// #ifdef CELERO_STATIC
 #define CELERO_EXPORT
 #define CELERO_EXPORT_C
-#else
-#ifdef _WIN32
-#if defined CELERO_EXPORTS
-#define CELERO_EXPORT __declspec(dllexport)
-#define CELERO_EXPORT_C extern "C" __declspec(dllexport)
-#else
-#define CELERO_EXPORT __declspec(dllimport)
-#define CELERO_EXPORT_C extern "C" __declspec(dllimport)
-#endif
-#else
-#define CELERO_EXPORT
-#define CELERO_EXPORT_C extern "C"
-#endif
-#endif
+// #else
+// #ifdef _WIN32
+// #if defined CELERO_EXPORTS
+// #define CELERO_EXPORT __declspec(dllexport)
+// #define CELERO_EXPORT_C extern "C" __declspec(dllexport)
+// #else
+// #define CELERO_EXPORT __declspec(dllimport)
+// #define CELERO_EXPORT_C extern "C" __declspec(dllimport)
+// #endif
+// #else
+// #define CELERO_EXPORT
+// #define CELERO_EXPORT_C extern "C"
+// #endif
+// #endif
 
 #endif
